@@ -29,6 +29,21 @@
     z-index: 90;
 }
 
+.burgerImage {
+    cursor: pointer;
+}
+
+@media (hover: hover) {
+    .burgerImage:hover {
+      filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+    }
+  }
+  @media (hover: none) {
+    .burgerImage:active {
+      filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+    }
+  }
+
 @media screen and (max-width: 992px) {
     .burgerMenuList {
         top: 80px;
