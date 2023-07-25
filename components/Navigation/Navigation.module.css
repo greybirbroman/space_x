@@ -33,4 +33,7 @@
     .burgerMenuList {
         top: 80px;
     }
+    .navItem {
+        font-size: 14px;
+    }
 }

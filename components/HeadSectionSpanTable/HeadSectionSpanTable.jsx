@@ -36,9 +36,9 @@ const HeadSectionSpanTable = () => {
           onMouseEnter={() => handleMouseEnter(item.id)}
           onMouseLeave={handleMouseLeave}
         >
-          <p>{item.text}</p>
+          <p className={styles.text}>{item.text}</p>
           <span className={styles.span}>{item.span}</span>
-          <p>{item.subtext}</p>
+          <p className={styles.text}>{item.subtext}</p>
         </li>
       ))}
     </ul>

@@ -39,13 +39,13 @@
   .buttonContainer {
     justify-content: center;
   }
+  .section{
+    padding: 1rem 1rem 0;
+}
 }
 
 @media screen and (max-width: 550px) {
     .container {
         gap: 10px
-    }
-    .section{
-        padding: 1rem 1rem 0;
     }
 }

@@ -26,11 +26,12 @@ const HeadSection = () => {
       {!isMobileResolution && (
         <Image
           src='/space-no-background.png'
+          alt='Mars Image, Space'
           fill={true}
+          priority={true}
+          quality={100}
           objectFit='cover'
           style={{ zIndex: '30', filter: 'contrast(1)' }}
-          alt='Mars Image, Space'
-          quality={100}
         />
       )}
       <div className={styles.container}>
