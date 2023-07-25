@@ -7,7 +7,8 @@ import CustomButton from '../CustomButton/CustomButton';
 import useIsMobileResolution from '@/utils/hooks/useIsMobileResolution';
 
 const HeadSection = () => {
-  const isMobileResolution = useIsMobileResolution(992);
+  const isMarsHiddenResolution = useIsMobileResolution(1280);
+  // стояло 992px - показалось что текст сильно прячется
   const sectionData = {
     title: 'путешествие',
     subtitle: 'на красную планету',
@@ -23,7 +24,7 @@ const HeadSection = () => {
           objectFit='cover'
           style={{ filter: 'contrast(1.1)' }}
         />
-      {!isMobileResolution && (
+      {!isMarsHiddenResolution && (
         <Image
           src='/space-no-background.png'
           alt='Mars Image, Space'
