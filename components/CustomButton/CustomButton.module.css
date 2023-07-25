@@ -75,11 +75,28 @@
   transition-delay: 0s;
 }
 
-.customButton:hover {
+/* .customButton:hover {
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
   transition-delay: 0.75s;
   background-color: #2196f3;
   color: white;
+} */
+
+@media (hover: hover) {
+  .customButton:hover {
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.75s;
+    background-color: #2196f3;
+    color: white;
+  }
+}
+@media (hover: none) {
+  .customButton:active {
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.75s;
+    background-color: #2196f3;
+    color: white;
+  }
 }
 
 @media screen and (max-width: 550px) {

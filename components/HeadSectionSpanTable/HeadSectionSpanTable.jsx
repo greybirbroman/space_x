@@ -24,6 +24,8 @@ const HeadSectionSpanTable = () => {
     return hoveredStyles.find((style) => style.id === itemId) || [];
   };
 
+  // Лучше переписать с использованием доп.классов для каждого элемента
+  // чтобы избежать поведения touch с помощью медиа запроса типа hover:hover
   return (
     <ul className={styles.tableList}>
       {tableList.map((item) => (

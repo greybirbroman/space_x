@@ -8,7 +8,7 @@ const Logo = () => {
   const isMobileResolution = useIsMobileResolution(767)
   return (
     <Link href='/' className={styles.logoLink}>
-      <Image src='/spacex-logo.svg' alt='Logo' width={isMobileResolution? 160 : 332} height={41} quality={100} priority={true}/>
+      <Image src='/spacex-logo.svg' alt='Logo' width={isMobileResolution? 160 : 332} height={40} quality={100} priority={true}/>
     </Link>
   );
 };

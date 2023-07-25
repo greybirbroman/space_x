@@ -29,7 +29,7 @@ const HeadSection = () => {
           fill={true}
           objectFit='cover'
           style={{ zIndex: '30', filter: 'contrast(1)' }}
-          alt='space'
+          alt='Mars Image, Space'
           quality={100}
         />
       )}

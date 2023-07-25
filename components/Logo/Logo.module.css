@@ -1,10 +1,21 @@
 .logoLink {
   position: relative;
   width: fit-content;
-  height: 100%;
+  height: fit-content;
   transition: filter 0.3s ease;
 }
 
-.logoLink:hover {
+/* .logoLink:hover {
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+} */
+
+@media (hover: hover) {
+  .logoLink:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+  }
+}
+@media (hover: none) {
+  .logoLink:active {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+  }
 }
