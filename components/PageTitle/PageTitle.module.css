@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  cursor: default;
+  padding-top: 39px;
+  position: absolute;
+  top: 0;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg, #ffffff, #f65b04);
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text; /* Для поддержки веб-кит браузерами */
+  color: transparent; /* Делает текст невидимым, чтобы был виден только градиент */
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  background-image: linear-gradient(90deg, #ffffff, #f65b04);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0;
+    position: relative;
+  }
+  .title {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .title {
+    font-size: 32px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+}

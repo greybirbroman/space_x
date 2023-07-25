@@ -1,0 +1,10 @@
+.logoLink {
+  position: relative;
+  width: fit-content;
+  height: 100%;
+  transition: filter 0.3s ease;
+}
+
+.logoLink:hover {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+}
